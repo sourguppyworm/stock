@@ -1,5 +1,3 @@
-require 'pry-byebug'
-
 def stock_picker(array)
   # buy price, sell day, profit, day index
   # format: price, day 
