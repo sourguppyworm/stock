@@ -10,12 +10,10 @@ def stock_picker(array)
     # buy = [price, day] if sell[0] != 0 && price < buy[0]
     # p buy
     array[day...].each_with_index do |sell_price, sell_day|
-      p array[day...], "Yeah"
       if sell_price - buy_price > profit[0]
         buy = [buy_price, day]
         sell = [sell_price, sell_day]
         profit[0] = sell_price - buy_price
-        p "b: #{buy} s: #{sell} p: #{profit}"
       end
     end
        
